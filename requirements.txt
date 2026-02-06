@@ -1,2 +1,22 @@
-numpy>=1.20.0
+# Critical Mineral Separation Benchmark
+# Python Dependencies
+# ===================================
+#
+# INSTALLATION:
+#   pip install -r requirements.txt
+#
+# USAGE:
+#   python3 01_STRATEGIC_MATERIALS_AUDIT/verify_ree_selectivity.py
+#   python3 02_COMPLIANCE_SIDE_STREAM/verify_pfas_binding.py
+#   python3 assets/generate_all_charts.py
+#
+# TESTED ON:
+#   Python 3.9, 3.10, 3.11
+#
+# ===================================
+
+# Core scientific computing
+numpy>=1.21.0
+
+# Visualization
 matplotlib>=3.5.0

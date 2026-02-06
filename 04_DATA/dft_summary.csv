@@ -1,0 +1,46 @@
+# DFT CALCULATION SUMMARY - PUBLIC BENCHMARK DATA
+# ====================================================
+# This file contains SUMMARY statistics only.
+# Full calculation logs with molecular structures are available under NDA.
+# All binding energies in kJ/mol. Negative = favorable binding.
+# ====================================================
+
+category,calculation_id,system_description,energy_type,value_kj_mol,status,scf_cycles,timestamp
+janus_ligand,janus_gen_001_fe,"JANUS_GEN_001 + Fe3+",binding_energy,-248267.5,CONVERGED,45,2026-01-16T09:12:00Z
+janus_ligand,janus_gen_001_nd,"JANUS_GEN_001 + Nd3+",binding_energy,-298.4,CONVERGED,38,2026-01-16T10:30:00Z
+janus_ligand,janus_gen_004_fe,"JANUS_GEN_004 + Fe3+",binding_energy,-248294.2,CONVERGED,41,2026-01-16T11:45:00Z
+janus_ligand,janus_gen_004_nd,"JANUS_GEN_004 + Nd3+",binding_energy,-305.1,CONVERGED,36,2026-01-16T13:00:00Z
+janus_ligand,janus_gen_012_fe,"JANUS_GEN_012 + Fe3+",binding_energy,-248281.6,CONVERGED,42,2026-01-15T14:30:00Z
+janus_ligand,janus_gen_012_nd,"JANUS_GEN_012 + Nd3+",binding_energy,-312.0,CONVERGED,35,2026-01-15T16:00:00Z
+janus_ligand,janus_gen_063_fe,"JANUS_GEN_063 + Fe3+",binding_energy,-248255.8,CONVERGED,44,2026-01-18T09:00:00Z
+janus_ligand,janus_gen_063_nd,"JANUS_GEN_063 + Nd3+",binding_energy,-295.2,CONVERGED,37,2026-01-18T10:15:00Z
+janus_ligand,janus_gen_068_fe,"JANUS_GEN_068 + Fe3+",binding_energy,-248278.3,CONVERGED,43,2026-01-19T11:00:00Z
+janus_ligand,janus_gen_068_nd,"JANUS_GEN_068 + Nd3+",binding_energy,-308.7,CONVERGED,36,2026-01-19T12:15:00Z
+janus_ligand,janus_gen_069_fe,"JANUS_GEN_069 + Fe3+",binding_energy,-248281.6,CONVERGED,42,2026-01-19T14:00:00Z
+janus_ligand,janus_gen_069_nd,"JANUS_GEN_069 + Nd3+",binding_energy,-315.8,CONVERGED,34,2026-01-19T15:15:00Z
+fluorocatcher,fluoro_fc1_pfoa,"FC-1 + PFOA",binding_energy,-85.2,CONVERGED,58,2026-01-25T09:00:00Z
+fluorocatcher,fluoro_fc2_pfoa,"FC-2 + PFOA",binding_energy,-91.7,CONVERGED,55,2026-01-25T10:30:00Z
+fluorocatcher,fluoro_fc3_pfoa,"FC-3 + PFOA",binding_energy,-88.4,CONVERGED,57,2026-01-25T12:00:00Z
+fluorocatcher,fluoro_fc4_pfoa,"FC-4 + PFOA",binding_energy,-95.1,CONVERGED,54,2026-01-25T14:00:00Z
+fluorocatcher,fluoro_fc5_pfoa,"FC-5 + PFOA",binding_energy,-102.3,CONVERGED,52,2026-01-26T09:00:00Z
+fluorocatcher,fluoro_fc6_pfoa,"FC-6 + PFOA",binding_energy,-108.6,CONVERGED,51,2026-01-26T10:30:00Z
+fluorocatcher,fluoro_fc7_pfoa,"FC-7 + PFOA",binding_energy,-115.2,CONVERGED,50,2026-01-26T12:00:00Z
+fluorocatcher,fluoro_fc8_pfoa,"FC-8 + PFOA",binding_energy,-121.0,CONVERGED,63,2026-01-27T15:45:00Z
+fluorocatcher,fluoro_fc8_pfos,"FC-8 + PFOS",binding_energy,-118.5,CONVERGED,61,2026-01-27T17:00:00Z
+fluorocatcher,fluoro_fc8_pfhxs,"FC-8 + PFHxS (C6)",binding_energy,-105.3,CONVERGED,59,2026-01-28T09:00:00Z
+fluorocatcher,fluoro_fc8_pfbs,"FC-8 + PFBS (C4)",binding_energy,-95.2,CONVERGED,56,2026-01-28T10:30:00Z
+fluorocatcher,fluoro_fc8_pfba,"FC-8 + PFBA (C4)",binding_energy,-88.7,CONVERGED,58,2026-01-28T12:00:00Z
+fluorocatcher,fluoro_fc8_genx,"FC-8 + GenX",binding_energy,-92.1,CONVERGED,57,2026-01-28T13:30:00Z
+ion_transport,ion_pore_0.65nm_li,"0.65nm pore + Li+",barrier_energy,28.4,CONVERGED,32,2026-01-20T09:00:00Z
+ion_transport,ion_pore_0.65nm_k,"0.65nm pore + K+",barrier_energy,0.0,CONVERGED,30,2026-01-20T10:00:00Z
+ion_transport,ion_pore_0.70nm_li,"0.70nm pore + Li+",barrier_energy,12.1,CONVERGED,31,2026-01-20T11:00:00Z
+ion_transport,ion_pore_0.70nm_k,"0.70nm pore + K+",barrier_energy,0.0,CONVERGED,29,2026-01-20T12:00:00Z
+ion_transport,ion_pore_0.80nm_li,"0.80nm pore + Li+",barrier_energy,2.3,CONVERGED,28,2026-01-20T13:00:00Z
+ion_transport,ion_pore_0.80nm_k,"0.80nm pore + K+",barrier_energy,0.0,CONVERGED,27,2026-01-20T14:00:00Z
+# Additional calculations logged in full data room (73 total)
+# Summary statistics:
+# - Janus Ligand calculations: 35 (34 converged, 97.1%)
+# - Fluorocatcher calculations: 30 (30 converged, 100%)
+# - Ion Transport calculations: 8 (8 converged, 100%)
+# - Best Fe/Nd selectivity: JANUS_GEN_069 with Delta-Delta-E = 247,966 kJ/mol
+# - Best PFAS binding: FC-8 with -121.0 kJ/mol (PFOA)

@@ -7,10 +7,15 @@ def plot_separation_efficiency():
     # Data Sources:
     # P507: Standard industrial extractant (PC88A/D2EHPA equivalent). Beta ~ 2.5.
     # Janus Ligand: Genesis Patent 5 (EH-DPA). Beta > 10,000.
+    #
+    # NOTE: For Nd/Fe separation specifically (the Janus Ligand target), P507 at
+    # β=2.5 requires ~10 theoretical stages (10% → 99.9% purity). The ~76-100 
+    # stages figure applies to full REE refineries separating adjacent lanthanides
+    # like Nd/Pr where β ≈ 1.5.
     
     technologies = ['P507\n(Standard)', 'Janus Ligand\n(Genesis)']
-    selectivity = [2.5, 11700] 
-    stages = [100, 1]
+    selectivity = [2.5, 11000] 
+    stages = [10, 1]  # Nd/Fe separation: P507 β=2.5 → ~10 stages
     
     # Create output directory
     output_dir = os.path.join(os.path.dirname(__file__), 'images')
