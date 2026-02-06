@@ -60,8 +60,9 @@ def main():
     
     # 2. Genesis Technology (Janus Ligand)
     # Derived from DFT binding energy difference > 50 kJ/mol
-    # exp(Delta_G / RT) -> exp(50000 / 8.314 * 298) -> Massive number
-    # We cap at 11,000 conservatively based on lab limits.
+    # Theoretical Beta = exp(Delta_G / RT) -> Massive number (>10^6)
+    # We conservatively cap at 11,000 to account for real-world kinetic limitations,
+    # solvent entrainment, and non-ideal stage efficiencies.
     beta_genesis = 11000.0
     stages_genesis = calculate_theoretical_stages(beta_genesis)
 
