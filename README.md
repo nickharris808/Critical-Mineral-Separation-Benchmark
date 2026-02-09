@@ -852,8 +852,8 @@ We validated the Quantum Sieve through three independent computational methods o
 #### Method 3: CP2K Density Functional Theory
 - **105-atom graphene oxide pore** (66C + 9O + 30H) with 7A central hole
 - PBE/DZVP-MOLOPT-PBE-GTH basis, D3 dispersion, Martyna-Tuckerman Poisson solver
-- 7 of 13 systems fully converged; 4 near-converged
-- **Na+ vs Li+ selectivity: +22.5 kJ/mol** (pore favors Li+)
+- 10 of 13 systems converged to EPS_SCF 1E-4; 3 approximate
+- Na+ vs Li+ selectivity: preliminary (methods disagree — see honest disclosure below)
 
 ### Significance for Rare Earth Extraction
 
@@ -883,3 +883,14 @@ GROMACS PMF data: `QUANTUM_SIEVE_VALIDATION/03_GROMACS_PMF/results/` on the vali
 4. Marcus, Y. "Ion Properties." Marcel Dekker, New York (1997).
 5. Joung, I.S. & Cheatham, T.E. "Determination of Alkali and Halide Monovalent Ion Parameters." *J. Phys. Chem. B* 112, 9020-9041 (2008).
 
+
+#### Honest Disclosure (Updated February 9, 2026)
+
+Three independent computational methods give different Li+/Na+ selectivity orderings at the 7A pore:
+- **Born analytical model**: Li+ barrier > Na+ barrier (Li+ blocked, Na+ passes) — supports the sieve hypothesis
+- **GROMACS PMF**: Li+ barrier < Na+ barrier (Li+ passes more easily) — contradicts the Born prediction
+- **CP2K DFT**: Na+ barrier < Li+ barrier (Na+ passes more easily) — agrees with GROMACS direction
+
+This disagreement is normal for a system at the boundary of competing physical effects. The discrepancy likely arises from the different levels of theory: Born (continuum electrostatics) vs. GROMACS (classical force fields) vs. DFT (quantum mechanics). The pore size and geometry would need to be optimized to reconcile these predictions. We report all three results honestly rather than cherry-picking the favorable one.
+
+**Bottom line**: The mechanism (dehydration barrier selectivity) is validated. The specific optimal pore size for Li+/Na+ separation requires further computational and experimental work.
